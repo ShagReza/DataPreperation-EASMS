@@ -5,12 +5,7 @@ Created on Fri Feb 28 09:24:34 2025
 @author: shay
 """
 
-# -*- coding: utf-8 -*-
-"""
-Created on Fri Feb 28 09:24:34 2025
 
-@author: shay
-"""
 
 import os
 import pandas as pd
@@ -100,6 +95,34 @@ if __name__ == "__main__":
     output_dir1 = r"D:\0000-UHN\03-DataAndCodes\Data\ASMS\Sunny_NewVersion_27Feb\MLReady"
     output_dir2 = r"D:\0000-UHN\03-DataAndCodes\Data\ASMS\Sunny_NewVersion_27Feb\MLReady_Plus_FPs"
 
-    DesiredColumns = ["SMILES"]  # Fixed declaration
+    DesiredColumns = ['ASMS_BATCH_NUM',
+     'COMPOUND_ID',
+     'COMPOUND_FORMULA',
+     'SMILES',
+     'POOL_NAME',
+     'POOL_ID',
+     'POOL_SIZE',
+     'PROTEIN_NUMBER',
+     'TARGET_ID',
+     'PROTEIN_ID',
+     'PROTEIN_SEQ',
+     'PROTEIN_TAG',
+     'INCUBATION_VOLUME',
+     'PROTEIN_CONC',
+     'COMPOUND_CONC',
+     'MS_REPRODUCABILITY',
+     'POS_INT_REP1',
+     'POS_INT_REP2',
+     'POS_INT_REP3',
+     'TARGET_VALUE',
+     'SELECTIVE_VALUE',
+     'NTC_VALUE',
+     'ENRICHMENT',
+     'SELECTIVE_ENRICHMENT',
+     'PVALUE',
+     'BINARY_LABEL',
+     'SPR',
+     'KD',
+     'ISOMERS']
 
     main(data_path, masterlist_path, separated_files_dir, output_dir1, output_dir2, MasterList_Information, DesiredColumns)
